@@ -1,0 +1,12 @@
+.food-preferences{
+}
+.food-preferences h2{
+    padding: 5px;
+    border-bottom: 3px solid #2F2F2F;
+}
+
+.food-cards-container{
+    margin-top:30px;
+    display: flex;
+    width: 100%;
+}

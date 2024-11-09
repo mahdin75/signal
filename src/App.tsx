@@ -48,12 +48,14 @@ function App(user: User) {
               <div className="icon">12 July, 2024</div>
             </div>
           </div>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/settings" element={<Settings />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-          </Routes>
+          <div className="content-container">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/settings" element={<Settings />} />
+              {/* <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} /> */}
+            </Routes>
+          </div>
         </div>
         <div className="right-menu">
           <div className="avatar-container">

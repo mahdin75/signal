@@ -29,6 +29,12 @@ body {
   width: 100%;
 }
 
+
+.content-container{
+  padding:50px 30px;
+
+}
+
 .navbar{
   background-color:#2F2F2F;
   width: 100%;
