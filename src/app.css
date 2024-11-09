@@ -1,0 +1,149 @@
+/* index.css or App.css */
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+
+body {
+  font-family: 'Inika', serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.App{
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.right-menu{
+  width:183px;
+  background-color: #E0E0E0;
+  height: 100vh;
+}
+
+.main{
+  width: 100%;
+}
+
+.navbar{
+  background-color:#2F2F2F;
+  width: 100%;
+  height: 45px;
+  color:#fff;
+  padding:10px;
+  display: flex;
+  flex-wrap: wrap;      
+  justify-content: flex-end;
+  font-size: 15px;
+}
+
+.navbar div{
+  display: flex;
+}
+
+
+
+.icon{
+  cursor: pointer;
+  display: flex;
+  align-items: center; 
+  margin: 0px 10px;
+}
+
+.icon *{
+  margin: 0px 2px
+}
+
+.icon img{
+ width:16px;
+ height: 16px;
+}
+
+.navbar .right-col{
+  flex-basis: 350px; 
+  justify-content: flex-end;
+
+
+}
+.navbar .left-col{
+  flex-grow: 1; 
+
+}
+
+.avatar-container{
+  display: flex;
+  align-items: center;      
+  justify-content: center;   
+  width: 100%;
+  height: 156px;
+  border-left: 1px solid #666666;
+  border-bottom: 1px solid #666666;
+  background-color: #2F2F2F;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.avatar img{
+  width: 95px;
+  height: 95px;
+
+}
+
+
+.right-menu ul{
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+
+}
+
+.right-menu li{
+  position: relative;
+}
+
+
+.active-link,.menu-link{
+  font-size: 15px;
+  padding: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center; 
+}
+
+.active-link img, .menu-link img{
+  width: 16px;
+  height: 16px;
+  margin: 0px 5px;
+}
+
+
+.active-link{
+  background-color: #2F2F2F;
+  color:#fff;
+}
+
+.menu-link .menu-link-icon-light,.active-link .menu-link-icon-dark{
+  display: none;
+}
+.menu-link .rhombus{
+  display: none;
+}
+
+.main{
+  background-color: #F5F5F5;
+}
+
+.rhombus {
+  position: absolute;
+  left:-5px;
+  width: 10px;        
+  height: 10px;        
+  background-color: #fff; 
+  transform: rotate(45deg); 
+}

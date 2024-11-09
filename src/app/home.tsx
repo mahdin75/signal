@@ -1,7 +1,12 @@
 import React from "react";
+import "./home.css";
 
-function Home() {
-  return <div className="home">home</div>;
+interface User {
+  name?: string;
+}
+
+function Home(user: User) {
+  return <div className="home">Home</div>;
 }
 
 export default Home;
