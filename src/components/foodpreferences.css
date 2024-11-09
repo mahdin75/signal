@@ -1,4 +1,28 @@
 .food-cards-container{
     display: flex;
     width: 100%;
+    border: 1px solid #ECECEC;
+    border-radius: 2px;
+    height: 200px;
+    padding:20px 40px;
+    margin-top: 10px;
+    overflow-x: auto;
+    cursor: pointer;
+}
+
+
+.food-cards-container img{
+    width: 200px;
+    width: 190px;
+    border:1px solid #AFAFAF;
+    margin: 0px 10px;
+    -webkit-box-shadow: -1px 6px 5px -2px rgba(0,0,0,0.25);
+    -moz-box-shadow: -1px 6px 5px -2px rgba(0,0,0,0.25);
+    box-shadow: -1px 6px 5px -2px rgba(0,0,0,0.25);
+}
+
+.food-card{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
 }

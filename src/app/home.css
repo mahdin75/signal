@@ -1,5 +1,9 @@
+.preferences{
+    overflow-y: auto;
+    height:75vh
+}
 
-.preferences h2{
+.home h2{
     padding: 5px;
     border-bottom: 3px solid #2F2F2F;
 }

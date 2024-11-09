@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./home.css";
 import FoodPreferences from "../components/FoodPreferences";
 import { FoodItemType } from "../types";
+import FoodImageIcon from "../assets/icons/food_image_cover.jpeg";
 
 interface User {
   name?: string;
@@ -14,47 +15,22 @@ function Home() {
       name: "Jack",
       foodItems: [
         {
-          foodImg: <img alt="10mg" src="" />,
+          foodImg: <img alt="10mg" src={FoodImageIcon} />,
           foodAmount: "10mg",
           foodDescription: "helllo food",
         },
         {
-          foodImg: <img alt="10mg" src="" />,
+          foodImg: <img alt="10mg" src={FoodImageIcon} />,
           foodAmount: "10mg",
           foodDescription: "helllo food",
         },
         {
-          foodImg: <img alt="10mg" src="" />,
+          foodImg: <img alt="10mg" src={FoodImageIcon} />,
           foodAmount: "10mg",
           foodDescription: "helllo food",
         },
         {
-          foodImg: <img alt="10mg" src="" />,
-          foodAmount: "10mg",
-          foodDescription: "helllo food",
-        },
-      ],
-    },
-    {
-      name: "Jack",
-      foodItems: [
-        {
-          foodImg: <img alt="10mg" src="" />,
-          foodAmount: "10mg",
-          foodDescription: "helllo food",
-        },
-        {
-          foodImg: <img alt="10mg" src="" />,
-          foodAmount: "10mg",
-          foodDescription: "helllo food",
-        },
-        {
-          foodImg: <img alt="10mg" src="" />,
-          foodAmount: "10mg",
-          foodDescription: "helllo food",
-        },
-        {
-          foodImg: <img alt="10mg" src="" />,
+          foodImg: <img alt="10mg" src={FoodImageIcon} />,
           foodAmount: "10mg",
           foodDescription: "helllo food",
         },
@@ -64,22 +40,22 @@ function Home() {
       name: "Jack",
       foodItems: [
         {
-          foodImg: <img alt="10mg" src="" />,
+          foodImg: <img alt="10mg" src={FoodImageIcon} />,
           foodAmount: "10mg",
           foodDescription: "helllo food",
         },
         {
-          foodImg: <img alt="10mg" src="" />,
+          foodImg: <img alt="10mg" src={FoodImageIcon} />,
           foodAmount: "10mg",
           foodDescription: "helllo food",
         },
         {
-          foodImg: <img alt="10mg" src="" />,
+          foodImg: <img alt="10mg" src={FoodImageIcon} />,
           foodAmount: "10mg",
           foodDescription: "helllo food",
         },
         {
-          foodImg: <img alt="10mg" src="" />,
+          foodImg: <img alt="10mg" src={FoodImageIcon} />,
           foodAmount: "10mg",
           foodDescription: "helllo food",
         },
@@ -88,8 +64,8 @@ function Home() {
   ]);
   return (
     <div className="home">
+      <h2>Food Preferences</h2>
       <div className="preferences">
-        <h2>Food Preferences</h2>
         {users.map((user: User) => {
           return (
             <div className="user-preferences">

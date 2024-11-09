@@ -20,6 +20,11 @@ import Settings from "./app/Settings";
 // import Login from "./app/Login";
 // import Register from "./app/Register";
 
+const date = new Date();
+
+const options = { day: "numeric", month: "long", year: "numeric" };
+const formattedDate = date.toLocaleDateString("en-GB", options as any);
+
 interface User {
   name?: string;
 }
@@ -45,7 +50,7 @@ function App(user: User) {
                 <img alt="Dark Mode" src={LightModeIcon} />
                 <span>Dark Mode</span>
               </div>
-              <div className="icon">12 July, 2024</div>
+              <div className="icon">{formattedDate}</div>
             </div>
           </div>
           <div className="content-container">
