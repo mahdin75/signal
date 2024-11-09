@@ -17,8 +17,8 @@ import SettingsIconLight from "./assets/icons/settings_light.png";
 import Genericavatar from "./assets/icons/genericavatar.png";
 import Home from "./app/Home";
 import Settings from "./app/Settings";
-import Login from "./app/Login";
-import Register from "./app/Register";
+// import Login from "./app/Login";
+// import Register from "./app/Register";
 
 interface User {
   name?: string;
