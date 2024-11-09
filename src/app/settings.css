@@ -1,0 +1,10 @@
+.settings{
+    display:flex;
+    justify-content: space-around; 
+    align-items: center;          
+}
+
+.settings div{
+    
+    width:400px;
+}

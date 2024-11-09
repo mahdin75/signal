@@ -20,7 +20,7 @@ body {
 }
 
 .right-menu{
-  width:183px;
+  width:300px;
   background-color: #E0E0E0;
   height: 100vh;
 }
@@ -50,7 +50,6 @@ body {
 .navbar div{
   display: flex;
 }
-
 
 
 .icon{

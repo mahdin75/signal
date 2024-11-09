@@ -1,0 +1,19 @@
+.input-container{
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.input-container p{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input-container input,.input-container input:focus{
+    border: 1px solid #CDCDCD;
+    height: 35px;
+    width: 100%;
+    border-radius: 2px;
+    padding: 4px;
+}
+
