@@ -30,6 +30,7 @@ interface User {
 }
 
 function App(user: User) {
+  console.log(window.location.pathname);
   return (
     <Router>
       <div className="App">
@@ -51,6 +52,41 @@ function App(user: User) {
                 <span>Dark Mode</span>
               </div> */}
               <div className="icon">{formattedDate}</div>
+            </div>
+          </div>
+          <div className="mobile-navbar">
+            <div className="mobile-navbar-avatar-container">
+              <img src={Genericavatar} alt="avatar" />
+            </div>
+            <div className="mobile-navbar-messgae-container">
+              <h3>Hello {user?.name ?? "Mahdi"}!</h3>
+              <p>{formattedDate}</p>
+            </div>
+            <div className="mobile-navbar-nav-links">
+              <div className="logout-mobile">
+                <img alt="logout" src={LogoutIcon} />
+                <span>Logout</span>
+              </div>
+              {/* {window.location.pathname === "/" && ( */}
+              <NavLink to="/settings" className={"active-link"}>
+                <img
+                  className="menu-link-icon-light"
+                  alt="settings"
+                  src={SettingsIconLight}
+                />
+                <span>Settings</span>
+              </NavLink>
+              {/* )} */}
+              {/* {window.location.pathname === "/settings" && ( */}
+              <NavLink to="/" className={"active-link"}>
+                <img
+                  className="menu-link-icon-light"
+                  alt="home"
+                  src={HomeIconLight}
+                />
+                <span>Home</span>
+              </NavLink>
+              {/* )} */}
             </div>
           </div>
           <div className="content-container">

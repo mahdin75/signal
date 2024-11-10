@@ -1,6 +1,5 @@
 .food-cards-container{
     display: flex;
-    width: 100%;
     border: 1px solid #ECECEC;
     border-radius: 2px;
     height: 200px;
@@ -8,6 +7,7 @@
     margin-top: 10px;
     overflow-x: auto;
     cursor: pointer;
+
 }
 
 
