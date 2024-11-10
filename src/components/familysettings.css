@@ -1,8 +1,15 @@
+.family-members{
+    height: 150px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
 
 .family-settings h4{
     padding: 5px;
     border-bottom: 3px solid #2F2F2F;
     font-size: 20px;
+
 }
 
 .family-add{
@@ -15,7 +22,7 @@
     border:1px solid #CDCDCD;
     cursor: pointer;
     border-radius: 2px;
-    margin:10px 0px;
+    margin:20px 0px;
 }
 
 .family-add img{
@@ -23,6 +30,8 @@
 }
 
 .family-member-item{
+    margin: auto;
+    width:95%;
     margin-top: 10px;
     padding:10px 10px;
     display: flex;

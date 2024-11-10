@@ -3,7 +3,7 @@
     justify-content: space-around; 
 }
 
-.settings div{
+.settings >div{
     width:400px;
 }
 
