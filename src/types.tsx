@@ -12,4 +12,11 @@ interface FamilyMemberType {
   gender?: string;
 }
 
-export type { FoodItemType, FamilyMemberType };
+interface UserSettingsData {
+  email?: string;
+  name?: string;
+  birthDate?: string;
+  gender?: string;
+}
+
+export type { FoodItemType, FamilyMemberType, UserSettingsData };
