@@ -4,4 +4,12 @@ interface FoodItemType {
   foodDescription: string;
 }
 
-export type { FoodItemType };
+interface FamilyMemberType {
+  id?: string;
+  email?: string;
+  name?: string;
+  birthDate?: string;
+  gender?: string;
+}
+
+export type { FoodItemType, FamilyMemberType };

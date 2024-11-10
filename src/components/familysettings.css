@@ -1,15 +1,15 @@
-.family-members{
-    height: 150px;
-    overflow-y: auto;
-    box-sizing: border-box;
-}
-
-
 .family-settings h4{
     padding: 5px;
     border-bottom: 3px solid #2F2F2F;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+
+.family-settings img{
+    cursor: pointer;
 }
 
 .family-add{
@@ -46,3 +46,4 @@
 .delete-memebr{
     cursor: pointer;
 }
+

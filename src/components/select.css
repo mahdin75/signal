@@ -1,16 +1,16 @@
-.input-container{
+.select-container{
     margin: 10px 0px;
     width: 100%;
     margin-right: 30px;
 }
 
-.input-container p{
+.select-container p{
     margin-bottom: 5px;
     font-size: 14px;
     font-weight: bold;
 }
 
-.input-container input,.input-container input:focus{
+.select-container select,.input-container select:focus{
     border: 1px solid #CDCDCD;
     height: 35px;
     width: 100%;

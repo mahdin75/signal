@@ -25,14 +25,17 @@ body {
   height: 100vh;
 }
 
-.main{
-  width: 100%;
-}
-
 
 .content-container{
   padding:50px 30px;
+  height: 92vh;
+  overflow-y: auto;
+  direction: rtl; 
+}
 
+.content-container *{
+
+  direction: ltr; 
 }
 
 .navbar{
@@ -76,7 +79,6 @@ body {
 }
 .navbar .left-col{
   flex-grow: 1; 
-
 }
 
 .avatar-container{
@@ -142,6 +144,7 @@ body {
 
 .main{
   background-color: #F5F5F5;
+  width: 100%;
 }
 
 .rhombus {

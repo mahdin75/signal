@@ -1,20 +1,20 @@
 import React from "react";
 import "./input.css";
+import { FieldError } from "react-hook-form";
 
 interface InputPropsType {
   label: string;
-  onChange?: any;
-  name?: string;
+  type?: string;
+  inputProps?: React.InputHTMLAttributes<HTMLInputElement>;
+  error?: FieldError;
 }
 
-function Input(props: InputPropsType) {
+function Input({ label, type = "text", inputProps, error }: InputPropsType) {
   return (
     <div className="input-container">
-      <p>{props.label}</p>
-      <input
-        type="text"
-        onChange={(e: any) => props?.onChange(props.name, e.target.value)}
-      />
+      <p>{label}</p>
+      <input type={type} {...inputProps} />
+      {error && <span className="error-message">{error.message}</span>}
     </div>
   );
 }
