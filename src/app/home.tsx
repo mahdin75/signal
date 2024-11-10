@@ -12,6 +12,7 @@ import { calculateAge, displayFoodsByCategory } from "../utils";
 
 interface User {
   name?: string;
+  isMe: boolean;
   foodItems: FoodItemType[];
 }
 
@@ -42,7 +43,8 @@ function Home() {
     getServingsForAges(
       (ages as any).filter((a: number | undefined) => a !== undefined)
     ).then((response) => {
-      let users_ = [...(familyMembers ?? []), user];
+      (user as any).isMe = true;
+      let users_ = [user, ...(familyMembers ?? [])];
       users_ = users_.map((u) => ({
         ...u,
         age: calculateAge((u as any).birthDate),
@@ -63,7 +65,7 @@ function Home() {
               src={(ImageCovers as any)[i.fgid]}
               onClick={() => {
                 getFoodGroupInfo(i.fgid).then((reponse) => {
-                  let instruction = `Sevings: ${i.foodAmount} <br/>`;
+                  let instruction = `You need to have <b> ${i.foodAmount} Servings </b> of following foods. Before that <b>pay attention to the following directional statement</b>:<br/>`;
                   instruction += reponse.statements
                     .map(
                       (s: Record<string, string | number>, index: number) =>
@@ -73,7 +75,8 @@ function Home() {
                     )
                     .join("");
 
-                  instruction += "<br/><br/>";
+                  instruction +=
+                    "<br/><br/> Here you can see each food in its category as well as <b>the amount of each serving:</b><br/><br/>";
                   instruction += displayFoodsByCategory(
                     reponse.groups,
                     reponse.foods
@@ -103,7 +106,7 @@ function Home() {
           {users.map((user: User) => {
             return (
               <div className="user-preferences">
-                <h3>{user.name}</h3>
+                <h3>{`${user.name} ${user.isMe ? "(My Menu)" : ""}`}</h3>
                 <FoodPreferences foodItems={user.foodItems} />
               </div>
             );
