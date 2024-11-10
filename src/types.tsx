@@ -1,7 +1,6 @@
 interface FoodItemType {
   foodImg: React.ReactElement;
   foodAmount: string;
-  foodDescription: string;
 }
 
 interface FamilyMemberType {
@@ -19,4 +18,8 @@ interface UserSettingsData {
   gender?: string;
 }
 
-export type { FoodItemType, FamilyMemberType, UserSettingsData };
+interface CSVData {
+  [key: string]: string | number;
+}
+
+export type { FoodItemType, FamilyMemberType, UserSettingsData, CSVData };

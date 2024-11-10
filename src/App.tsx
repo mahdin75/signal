@@ -8,8 +8,8 @@ import {
 } from "react-router-dom";
 
 import LogoutIcon from "./assets/icons/logout.png";
-import CallIcon from "./assets/icons/phonecall.png";
-import LightModeIcon from "./assets/icons/light_mode.png";
+// import CallIcon from "./assets/icons/phonecall.png";
+// import LightModeIcon from "./assets/icons/light_mode.png";
 import HomeIconDark from "./assets/icons/home_dark.png";
 import HomeIconLight from "./assets/icons/home_light.png";
 import SettingsIconDark from "./assets/icons/settings_dark.png";
@@ -42,14 +42,14 @@ function App(user: User) {
               </div>
             </div>
             <div className="right-col">
-              <div className="icon">
+              {/* <div className="icon">
                 <img alt="Support" src={CallIcon} />
                 <span>Support</span>
-              </div>
-              <div className="icon">
+              </div> */}
+              {/* <div className="icon">
                 <img alt="Dark Mode" src={LightModeIcon} />
                 <span>Dark Mode</span>
-              </div>
+              </div> */}
               <div className="icon">{formattedDate}</div>
             </div>
           </div>

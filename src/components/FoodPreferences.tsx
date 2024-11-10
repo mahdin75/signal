@@ -9,7 +9,7 @@ function FoodPreferences(props: { foodItems: FoodItemType[] }) {
         return (
           <div className="food-card">
             {item.foodImg}
-            <p>{item.foodAmount}</p>
+            <p>{item.foodAmount} Servings</p>
           </div>
         );
       })}
