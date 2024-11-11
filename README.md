@@ -2,11 +2,7 @@
 
 This project provides a responsive, scalable application for generating optimal daily menus for individuals and families to encourage healthy eating habits.
 
-## Purpose
-
-The goal of this project is to create a code test that maximizes "signal"—demonstrating skill and proficiency—while keeping the solution simple, effective, and concise. Feedback is highly valued; please feel free to open an issue with any insights or suggestions for improving this project.
-
-### Deployment
+### Demo
 
 The deployed version is available at [GitHub Pages](https://mahdin75.github.io/signal).
 
