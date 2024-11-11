@@ -1,4 +1,4 @@
-# Eating Menu Planner
+# Food Guide Service
 
 This project provides a responsive, scalable application for generating optimal daily menus for individuals and families to encourage healthy eating habits.
 
@@ -14,6 +14,10 @@ The application provides:
 - **Family Daily Menu:** A family view with a breakdown for each member, allowing personalized daily recommendations.
 
 This project is an MVP (Minimum Viable Product) and does not include additional features like grocery delivery integration or personalized dietary preferences, which may be added in future updates.
+
+## UI/UX Design
+
+The UI/UX designs for this project are available on Figma. You can view them [here](https://www.figma.com/design/4B2SAEnDNFKhkJQYVkUZO7/Signal).
 
 ## Demo Walkthroughs
 
