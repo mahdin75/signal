@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/signal/static/css/main.5939f26d.css",
+    "main.js": "/signal/static/js/main.822ea95b.js",
+    "static/js/453.e2a347bd.chunk.js": "/signal/static/js/453.e2a347bd.chunk.js",
+    "static/media/vegetables.jpeg": "/signal/static/media/vegetables.2590a0b3894833872614.jpeg",
+    "static/media/grains.jpg": "/signal/static/media/grains.c76ad02e7d94d75f1ce4.jpg",
+    "static/media/meat.jpg": "/signal/static/media/meat.c833b85e8868b8a0f6be.jpg",
+    "static/media/milk.jpg": "/signal/static/media/milk.7bb37f2a74a8ab391a2e.jpg",
+    "index.html": "/signal/index.html",
+    "main.5939f26d.css.map": "/signal/static/css/main.5939f26d.css.map",
+    "main.822ea95b.js.map": "/signal/static/js/main.822ea95b.js.map",
+    "453.e2a347bd.chunk.js.map": "/signal/static/js/453.e2a347bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5939f26d.css",
+    "static/js/main.822ea95b.js"
+  ]
+}
