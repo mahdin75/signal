@@ -21,6 +21,7 @@ import Login from "./app/Login";
 import { LogoutUser } from "./api/Auth";
 import { getUserSettings } from "./api/Settings";
 import { UserSettingsData } from "./types";
+import { CONFIGS } from "./config";
 // import Login from "./app/Login";
 // import Register from "./app/Register";
 
@@ -34,7 +35,7 @@ function App() {
 
   const Logout = () => {
     LogoutUser();
-    window.location.href = "/";
+    window.location.href = `/${CONFIGS.BASE_PATH}`;
   };
 
   useEffect(() => {
@@ -45,7 +46,7 @@ function App() {
     <Router>
       <Routes>
         <Route
-          path="/"
+          path={`${CONFIGS.BASE_PATH}/`}
           element={
             <div className="login-container">
               <Login />
@@ -53,7 +54,7 @@ function App() {
           }
         />
         <Route
-          path="*"
+          path={`/*`}
           element={
             <div className="App">
               <div className="main">
@@ -90,7 +91,10 @@ function App() {
                       <span>Logout</span>
                     </div>
                     {/* {window.location.pathname === "/" && ( */}
-                    <NavLink to="/settings" className={"active-link"}>
+                    <NavLink
+                      to={`/${CONFIGS.BASE_PATH}/settings`}
+                      className={"active-link"}
+                    >
                       <img
                         className="menu-link-icon-light"
                         alt="settings"
@@ -100,7 +104,10 @@ function App() {
                     </NavLink>
                     {/* )} */}
                     {/* {window.location.pathname === "/settings" && ( */}
-                    <NavLink to="/home" className={"active-link"}>
+                    <NavLink
+                      to={`/${CONFIGS.BASE_PATH}/home`}
+                      className={"active-link"}
+                    >
                       <img
                         className="menu-link-icon-light"
                         alt="home"
@@ -113,8 +120,14 @@ function App() {
                 </div>
                 <div className="content-container">
                   <Routes>
-                    <Route path="/home" element={<Home />} />
-                    <Route path="/settings" element={<Settings />} />
+                    <Route
+                      path={`${CONFIGS.BASE_PATH}/home`}
+                      element={<Home />}
+                    />
+                    <Route
+                      path={`${CONFIGS.BASE_PATH}/settings`}
+                      element={<Settings />}
+                    />
                     {/* <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} /> */}
                   </Routes>
@@ -131,7 +144,7 @@ function App() {
                 <ul>
                   <li>
                     <NavLink
-                      to="/home"
+                      to={`/${CONFIGS.BASE_PATH}/home`}
                       className={({ isActive }) =>
                         isActive ? "active-link" : "menu-link"
                       }
@@ -156,7 +169,7 @@ function App() {
                   </li>
                   <li>
                     <NavLink
-                      to="/settings"
+                      to={`/${CONFIGS.BASE_PATH}/settings`}
                       className={({ isActive }) =>
                         isActive ? "active-link" : "menu-link"
                       }

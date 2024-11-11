@@ -22,4 +22,16 @@ interface CSVData {
   [key: string]: string | number;
 }
 
-export type { FoodItemType, FamilyMemberType, UserSettingsData, CSVData };
+interface ConfigsType {
+  BASE_URL: string;
+  BASE_PATH: string;
+  BASE_PATH_DATA: string;
+}
+
+export type {
+  FoodItemType,
+  FamilyMemberType,
+  UserSettingsData,
+  CSVData,
+  ConfigsType,
+};

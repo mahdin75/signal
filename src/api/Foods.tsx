@@ -1,8 +1,9 @@
+import { CONFIGS } from "../config";
 import { CSVData } from "../types";
 import { distinctItems, getCSVDataFromURL } from "../utils";
 
 const getServingsForAges = async (ages: number[]) => {
-  const csvUrl = "data/servings_per_day-en_ONPP.csv";
+  const csvUrl = `${CONFIGS.BASE_PATH_DATA}/data/servings_per_day-en_ONPP.csv`;
   try {
     const data = await getCSVDataFromURL(csvUrl);
 
@@ -33,12 +34,14 @@ const getServingsForAges = async (ages: number[]) => {
 async function getFoodGroupInfo(fgid: string): Promise<any> {
   // Load all CSVs
   const directionalStatements: CSVData[] = await getCSVDataFromURL(
-    "data/fg_directional_satements-en_ONPP.csv"
+    `${CONFIGS.BASE_PATH_DATA}/data/fg_directional_satements-en_ONPP.csv`
   );
   const foodGroups: CSVData[] = await getCSVDataFromURL(
-    "data/foodgroups-en_ONPP.csv"
+    `${CONFIGS.BASE_PATH_DATA}/data/foodgroups-en_ONPP.csv`
   );
-  const fs: CSVData[] = await getCSVDataFromURL("data/foods-en_ONPP_rev.csv");
+  const fs: CSVData[] = await getCSVDataFromURL(
+    `${CONFIGS.BASE_PATH_DATA}/data/"data/foods-en_ONPP_rev.csv"`
+  );
 
   // Filter data for the requested fgid
   const statements = directionalStatements.filter((ds) => ds.fgid === fgid);

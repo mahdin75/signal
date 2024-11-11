@@ -7,6 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { LoginUser } from "../api/Auth";
 import Input from "../components/Input";
 import { useNavigate } from "react-router-dom";
+import { CONFIGS } from "../config";
 
 interface UserLoginTypes {
   username: string;
@@ -24,7 +25,7 @@ function Login() {
   const onSubmit: SubmitHandler<UserLoginTypes> = (data) => {
     try {
       LoginUser();
-      navigate("/home");
+      navigate(`/${CONFIGS.BASE_PATH}/home`);
     } catch (e) {
       toast.error("Login Error!");
     }
