@@ -40,7 +40,7 @@ async function getFoodGroupInfo(fgid: string): Promise<any> {
     `${CONFIGS.BASE_PATH_DATA}/data/foodgroups-en_ONPP.csv`
   );
   const fs: CSVData[] = await getCSVDataFromURL(
-    `${CONFIGS.BASE_PATH_DATA}/data/"data/foods-en_ONPP_rev.csv"`
+    `${CONFIGS.BASE_PATH_DATA}/data/foods-en_ONPP_rev.csv`
   );
 
   // Filter data for the requested fgid

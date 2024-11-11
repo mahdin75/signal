@@ -1,6 +1,6 @@
 import { ConfigsType } from "./types";
 
-const PRODUCTION_MODE = false;
+const PRODUCTION_MODE = true;
 
 const LOCAL = {
   BASE_URL: `http://localhost:3000`,
