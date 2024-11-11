@@ -15,6 +15,20 @@ The application provides:
 
 This project is an MVP (Minimum Viable Product) and does not include additional features like grocery delivery integration or personalized dietary preferences, which may be added in future updates.
 
+## Demo Walkthroughs
+
+### How to Login and Logout
+![How to login and logout](public/support/login_logout.gif)
+
+### Update User Settings
+![How to update user settings](public/support/user-settings-menu.gif)
+
+### Add a Family Member in Settings
+![How to add family member in settings](public/support/family-settings-menu.gif)
+
+### Show Daily Food Menu
+![Show daily food menu](public/support/food-menu.gif)
+
 ## Data
 
 The app loads CSV data directly on the client side, located in the `public/data` folder.
@@ -66,10 +80,9 @@ In the project directory, you can run:
   ```
   Copies configuration files for full control over build settings. Note: this action is irreversible.
 
-
 ## Technical Details
 
 - **React**: Built using React with TypeScript and functional components, utilizing hooks for state and effect management.
 - **Responsive Design**: Uses modern HTML and CSS for a responsive, accessible user experience.
 - **Automated Testing**: Tests implemented for key components to validate core functionality.
-- **DevOps and Security**: Incorporates DevOps.
+- **DevOps and Security**: Incorporates DevOps practices for streamlined deployment and basic security.
