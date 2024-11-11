@@ -2,11 +2,15 @@ import { ConfigsType } from "./types";
 
 const PRODUCTION_MODE = true;
 
-const LOCAL = { BASE_URL: ``, BASE_PATH: `signal`, BASE_PATH_DATA: `` };
+const LOCAL = {
+  BASE_URL: `http://localhost:3000`,
+  BASE_PATH: ``,
+  BASE_PATH_DATA: ``,
+};
 
 const DEPLOYED = {
-  BASE_URL: `https://mahdin75.github.io/signal`,
-  BASE_PATH: `signal`,
+  BASE_URL: `https://mahdin75.github.io`,
+  BASE_PATH: `signal/`,
   BASE_PATH_DATA: `/signal`,
 };
 

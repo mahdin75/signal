@@ -25,7 +25,7 @@ function Login() {
   const onSubmit: SubmitHandler<UserLoginTypes> = (data) => {
     try {
       LoginUser();
-      navigate(`/${CONFIGS.BASE_PATH}/home`);
+      navigate(`home`);
     } catch (e) {
       toast.error("Login Error!");
     }

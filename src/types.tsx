@@ -23,7 +23,7 @@ interface CSVData {
 }
 
 interface ConfigsType {
-  BASE_URL: string;
+  BASE_URL?: string;
   BASE_PATH: string;
   BASE_PATH_DATA: string;
 }
