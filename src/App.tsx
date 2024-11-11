@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./app.css";
 import {
   BrowserRouter as Router,
@@ -19,6 +19,7 @@ import Home from "./app/Home";
 import Settings from "./app/Settings";
 import Login from "./app/Login";
 import { LogoutUser } from "./api/Auth";
+import { getUserSettings } from "./api/Settings";
 import { UserSettingsData } from "./types";
 // import Login from "./app/Login";
 // import Register from "./app/Register";
@@ -28,11 +29,18 @@ const date = new Date();
 const options = { day: "numeric", month: "long", year: "numeric" };
 const formattedDate = date.toLocaleDateString("en-GB", options as any);
 
-function App(user: UserSettingsData) {
+function App() {
+  const [user, setUser] = useState<UserSettingsData>();
+
   const Logout = () => {
     LogoutUser();
     window.location.href = "/";
   };
+
+  useEffect(() => {
+    setUser(getUserSettings());
+  }, []);
+
   return (
     <Router>
       <Routes>
@@ -73,7 +81,7 @@ function App(user: UserSettingsData) {
                     <img src={Genericavatar} alt="avatar" />
                   </div>
                   <div className="mobile-navbar-messgae-container">
-                    <h3>Hello {user?.name ?? "Mahdi"}!</h3>
+                    <h3>Hello {user?.name ?? "User"}!</h3>
                     <p>{formattedDate}</p>
                   </div>
                   <div className="mobile-navbar-nav-links">
@@ -116,7 +124,7 @@ function App(user: UserSettingsData) {
                 <div className="avatar-container">
                   <div className="avatar">
                     <img alt="avatar" src={Genericavatar} />
-                    <h3>Hello {user?.name ?? "Mahdi"}!</h3>
+                    <h3>Hello {user?.name ?? "User"}!</h3>
                   </div>
                 </div>
 
