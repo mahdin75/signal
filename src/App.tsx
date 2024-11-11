@@ -35,7 +35,7 @@ function App() {
 
   const Logout = () => {
     LogoutUser();
-    window.location.href = `${CONFIGS.BASE_URL}${CONFIGS.BASE_PATH}`;
+    window.location.href = `${CONFIGS.BASE_URL}/${CONFIGS.BASE_PATH}`;
   };
 
   useEffect(() => {
